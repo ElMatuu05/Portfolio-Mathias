@@ -1,0 +1,209 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- CONFIGURACIÓN FLEXIBLE PARA EL CUERPO --- */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background-image: url("../img/Fondo2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  /* Sombra elegante sin franja gris */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #f72727;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #f72727;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+.nav-links li a.active {
+  font-weight: 700;
+}
+
+/* --- BOTÓN MENÚ MÓVIL --- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* --- FOTO DE PERFIL --- */
+.perfil-foto {
+  width: 160px; /* tamaño recomendado */
+  height: 160px;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 50%; /* la hace circular */
+  border: 3px solid #f52020; /* borde en rojo */
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-foto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.7);
+}
+
+/* --- HERO TEXT --- */
+.hero-text {
+  text-align: center;
+  padding: 40px 20px;
+  color: #f72727;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-style: italic;
+}
+
+.nav-links li a.active {
+  font-weight: 700;
+  color: #ffffff;
+}
+/* --- CONTENIDO PRINCIPAL --- */
+.content {
+  flex: 1; /* Esto empuja el footer hacia abajo */
+  text-align: center;
+  padding: 60px 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content-box {
+  background-color: rgba(245, 245, 245, 0.9);
+  max-width: 900px;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 1.8;
+  color: #222;
+}
+
+.content-box p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #f52020;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ef4444;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.7);
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto; /* Mantiene el footer al fondo */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}

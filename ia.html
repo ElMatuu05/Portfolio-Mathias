@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathIA's - Laboratorio de Chatbots Informativos</title>
+    <link rel="stylesheet" href="./css/ia.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Página principal</a></li>
+          <li><a href="laboratorios.html">Laboratorios</a></li>
+          <li><a href="tardigrados.html">Videos tardígrados</a></li>
+          <li><a href="#" class="active">MathIA's</a></li>
+          <li><a href="paginaweb.html">Página web</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-text">
+        <h1>MathIA's</h1>
+        <h3>Asistente Inteligente para el Profesorado en Computación</h3>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="content-box">
+        <p>
+          En este laboratorio se desarrolló un
+          <strong>chatbot informativo</strong> diseñado para responder consultas
+          frecuentes relacionadas con el <em>Profesorado en Computación</em> de
+          la
+          <strong>Facultad de Ciencias Exactas y Naturales de la UNLPam</strong
+          >. Este asistente ofrece información sobre la duración de la carrera,
+          las materias obligatorias, los horarios de cursada y los requisitos de
+          inscripción a las ayudantías.
+        </p>
+
+        <p>
+          El bot fue construido a partir de una estructura base generada
+          mediante inteligencia artificial, la cual se nutre de la información
+          correspondiente al plan de estudios. Para su desarrollo se emplearon
+          herramientas de <em>procesamiento de lenguaje natural</em> y una base
+          de datos actualizada con los contenidos académicos pertinentes,
+          permitiendo así brindar respuestas precisas, coherentes y
+          contextualmente adecuadas.
+        </p>
+
+        <p>
+          De este modo, el chatbot constituye un recurso digital valioso para
+          orientar tanto a estudiantes ingresantes como a quienes ya se
+          encuentran avanzados en la carrera, centralizando información clave
+          dentro de un entorno accesible, dinámico e interactivo.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>2025 - Mathias Torasso</p>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

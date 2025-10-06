@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathIA's - Laboratorio de Chatbots Informativos</title>
+    <link rel="stylesheet" href="./css/ia.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Página principal</a></li>
+          <li><a href="laboratorios.html">Laboratorios</a></li>
+          <li><a href="tardigrados.html">Videos tardígrados</a></li>
+          <li><a href="ia.html">MathIA's</a></li>
+          <li><a href="#" class="active">Página web</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-text">
+        <h1>Pagina Web</h1>
+        <h3></h3>
+      </div>
+    </header>
+
+    <main class="content"></main>
+
+    <footer>
+      <p>2025 - Mathias Torasso</p>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

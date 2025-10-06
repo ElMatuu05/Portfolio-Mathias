@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorios - Mathias Torasso</title>
+    <link rel="stylesheet" href="./css/laboratorios.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Página principal</a></li>
+          <li><a href="#" class="active">Laboratorios</a></li>
+          <li><a href="tardigrados.html">Videos tardígrados</a></li>
+          <li><a href="ia.html">MathIA's</a></li>
+          <li><a href="paginaweb.html">Página web</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-text">
+        <h1>Laboratorios</h1>
+      </div>
+    </header>
+
+    <main class="labs-container">
+      <section class="lab-card">
+        <div class="lab-image">
+          <img src="./img/imagen1.jpg" alt="Lab 1" />
+        </div>
+        <h3>Lab 1 — Adaptar un video a otro idioma</h3>
+        <p>
+          Adaptación de un video a otro idioma con sus subtítulos
+          correspondientes, doblaje y edición final
+        </p>
+        <button class="btn"><a href="tardigrados.html">Ver más</a></button>
+      </section>
+
+      <section class="lab-card">
+        <div class="lab-image">
+          <img src="./img/imagen2.jpg" alt="Lab 2" />
+        </div>
+        <h3>Lab 2 — MathIA's</h3>
+        <p>Chatbot informativo sobre el Profesorado en Computación</p>
+        <button class="btn"><a href="ia.html">Ver más</a></button>
+      </section>
+
+      <section class="lab-card">
+        <div class="lab-image">
+          <img src="./img/imagen3.jpg" alt="Lab 3" />
+        </div>
+        <h3>Lab 3 — Página web y Tardígrados</h3>
+        <p>
+          Página web sobre los tardígrados, además de explicar cómo crear y
+          publicar una web en GitHub Pages
+        </p>
+        <button class="btn"><a href="paginaweb.html">Ver más</a></button>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 - Mathias Torasso</p>
+    </footer>
+
+    <script>
+      // Menú responsive
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

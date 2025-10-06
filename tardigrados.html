@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos Tardígrados - Mathias Torasso</title>
+    <link rel="stylesheet" href="./css/tardigrados.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Página principal</a></li>
+          <li><a href="laboratorios.html">Laboratorios</a></li>
+          <li><a href="#" class="active">Videos tardígrados</a></li>
+          <li><a href="ia.html">MathIA's</a></li>
+          <li><a href="paginaweb.html">Página web</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-text">
+        <h1>Videos sobre tardígrados</h1>
+        <h3>Adaptaciones multilingües del recurso audiovisual educativo</h3>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="descripcion">
+        <p>
+          En esta primera instancia de laboratorio se trabajó con un material
+          audiovisual original de aproximadamente 500 MB, elaborado por el
+          equipo de la Dra. Mariana Rocha, perteneciente al Departamento de
+          Biología de la Facultad de Ciencias Exactas y Naturales de la
+          Universidad Nacional de La Pampa (UNLPam). El propósito principal fue
+          su adaptación a distintos idiomas, incorporando subtítulos y pistas de
+          audio con voces sintéticas.
+        </p>
+
+        <p>
+          Para alcanzar este objetivo se emplearon diversas herramientas:
+          <strong>HandBrake</strong> para la compresión inicial y final del
+          video, <strong>FlexClip</strong> y <strong>Clipchamp</strong> para la
+          edición y montaje, <strong>Studio Moisés</strong> para la separación
+          de música y voz, y <strong>Genspark</strong> para la generación
+          automática de archivos de subtítulos. Este flujo de trabajo permitió
+          optimizar el tamaño del archivo y obtener versiones subtituladas y
+          dobladas en diferentes idiomas de manera eficiente.
+        </p>
+
+        <p>
+          El resultado final constituye un recurso educativo versátil y
+          accesible, diseñado para su utilización en contextos académicos y de
+          divulgación científica, facilitando su comprensión mediante la
+          disponibilidad de subtítulos y doblajes en varios idiomas.
+        </p>
+      </section>
+
+      <section class="galeria-videos">
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/B91a96sHR9E?si=XTqVVvvYdC1DhMRU"
+            title="Tardígrados (versión en español)"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <a href="#" class="link-video"
+            >Versión en español con subtítulos en español</a
+          >
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/5agOYP6NYZ4?si=lQciLs6AvkLWe_VE"
+            title="Tardígrados (versión en inglés)"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <a href="#" class="link-video"
+            >Versión en inglés con subtítulos en inglés</a
+          >
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/sWMPW-bkQQ8?si=V-0xYzWFhJdqvfc4"
+            title="Tardígrados (versión en japonés)"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <a href="#" class="link-video"
+            >Versión en japonés con subtítulos en japonés</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 - Mathias Torasso</p>
+    </footer>
+
+    <script>
+      // Menú responsive
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
