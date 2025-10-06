@@ -145,6 +145,13 @@ body {
   color: #444;
 }
 
+.content-box img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.7);
+}
+
 /* --- BOTONES --- */
 .btn {
   background-color: #f52020;
