@@ -175,7 +175,7 @@ footer {
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -198,5 +198,10 @@ footer {
   .nav-links li {
     text-align: center;
     margin: 10px 0;
+  }
+
+  .labs-container {
+    display: flex;
+    flex-direction: column;
   }
 }
